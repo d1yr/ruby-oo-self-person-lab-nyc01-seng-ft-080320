@@ -52,4 +52,8 @@ class Person
       self.happiness += 2
       "♪ another one bites the dust ♫"
   end
+     def call_friend(friend)
+      [friend, self].each {|o| o.happiness += 3 }
+      "Hi #{friend.name}! It's #{self.name}. How are you?"
+    end
 end
