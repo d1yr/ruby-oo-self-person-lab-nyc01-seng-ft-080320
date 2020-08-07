@@ -20,7 +20,8 @@ class Person
     @hygiene = 10 if @hygiene < 10
   end
   def get_paid(salary)
-    @bank_account+= salary
+    self.bank_account+= salary
+    self.happiness += 1
     return 'all about the benjamins'
   end
   def happy?
