@@ -15,10 +15,10 @@ class Person
     @happiness = 0 if @happiness < 0
   end
   def hygiene=(num)
-    @hygiene = num
-    @hygiene = 10 if @hygiene > 10
-    @hygiene = 10 if @hygiene < 10
-  end
+      @hygiene = num
+      @hygiene = 10 if @hygiene > 10
+      @hygiene = 0 if @hygiene < 0
+    end
   def get_paid(salary)
     self.bank_account+= salary
     self.happiness += 1
